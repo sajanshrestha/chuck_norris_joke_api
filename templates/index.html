@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3>myjokeapi</h3>
+
+<div class="container">
+    {% for x in routes %}
+    <button type="button" class="collapsible">{{ x }}</button>
+
+    <div class="content">
+        <p>{{ routes[x] }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+
+<!--
+<div class="container">
+
+    <h3>myjokeapi</h3>
+
+    <ul class="list-group">
+
+        <li class="list-group-item list-group-item-primary">{{ routes[0] }}</li>
+        <li class="list-group-item list-group-item-secondary">{{ routes[1] }}</li>
+        <li class="list-group-item list-group-item-success">{{ routes[2] }}</li>
+        <li class="list-group-item list-group-item-danger">{{ routes[3] }}</li>
+        <li class="list-group-item list-group-item-warning">{{ routes[4] }}</li>
+        <li class="list-group-item list-group-item-info">{{ routes[5] }}</li>
+        <li class="list-group-item list-group-item-primary">{{ routes[6] }}</li>
+
+    </ul>
+
+</div>
+
+-->
